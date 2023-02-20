@@ -1,0 +1,174 @@
+/* for this page: make #contents display: none and adminPage display: flex */
+:root {
+  font-size: 10px;
+}
+
+#adminPostEnterForm {
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: white;
+  height: 1250px;
+  width: 60%;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgb(33, 28, 35, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+#adminPostEnterForm .titleSpot,
+#adminPostEnterForm .nameSpot,
+#adminPostEnterForm .scoreSpot,
+#adminPostEnterForm .genreSpot,
+#adminPostEnterForm .countrySpot,
+#adminPostEnterForm .yearSpot,
+#adminPostEnterForm .languageSpot,
+#adminPostEnterForm .durationSpot,
+#adminPostEnterForm .summerySpot,
+#adminPostEnterForm .episodeDetailSpot,
+#adminPostEnterForm .pictureSpot,
+#adminPostEnterForm .downloadLnkSpot,
+#adminPostEnterForm .isOnGoingSpot,
+#adminPostEnterForm .submitButtonSpot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* #adminPostEnterForm .genreSpot {
+  margin-top: 1rem;
+} */
+
+/* Title Texts */
+#adminPostEnterForm .nameSpot .nameText,
+#adminPostEnterForm .scoreSpot .scoreText,
+#adminPostEnterForm .countrySpot .countryText,
+#adminPostEnterForm .languageSpot .languageText,
+#adminPostEnterForm .episodeDetailSpot .seasonText,
+#adminPostEnterForm .yearSpot .startYearText,
+#adminPostEnterForm .durationSpot .durationText,
+#adminPostEnterForm .pictureSpot .pictureText,
+#adminPostEnterForm .downloadLnkSpot .downloadLnkText,
+#adminPostEnterForm .genreSpot .genreText,
+#adminPostEnterForm .summerySpot .summeryText,
+#adminPostEnterForm .isOnGoingSpot .isOnGoingText {
+  font-size: 2rem;
+  width: 150px;
+  margin-right: 4.5rem;
+}
+#adminPostEnterForm .episodeDetailSpot .episodeText,
+#adminPostEnterForm .yearSpot .endYearText {
+  font-size: 2rem;
+  width: 150px;
+  margin-right: 11rem;
+}
+#adminPostEnterForm .summerySpot .summeryText,
+#adminPostEnterForm .genreSpot .genreText {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+
+/* Text Inputs */
+#adminPostEnterForm .nameSpot input,
+#adminPostEnterForm .scoreSpot input,
+#adminPostEnterForm .countrySpot input,
+#adminPostEnterForm .languageSpot input,
+#adminPostEnterForm .durationSpot input,
+#adminPostEnterForm .pictureSpot input,
+#adminPostEnterForm .downloadLnkSpot input,
+#adminPostEnterForm .yearSpot .endYearInput,
+#adminPostEnterForm .episodeDetailSpot .episodeInput,
+#adminPostEnterForm .yearSpot .startYearInput,
+#adminPostEnterForm .episodeDetailSpot .seasonInput,
+#adminPostEnterForm .summerySpot textarea {
+  font-size: 1.6rem;
+  width: 362px;
+  height: 28px;
+  padding-right: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(33, 28, 35, 0.1);
+  background-color: rgba(33, 28, 35, 0.08);
+}
+#adminPostEnterForm .yearSpot .endYearInput,
+#adminPostEnterForm .episodeDetailSpot .episodeInput,
+#adminPostEnterForm .yearSpot .startYearInput,
+#adminPostEnterForm .episodeDetailSpot .seasonInput {
+  width: 150px;
+  height: 28px;
+}
+#adminPostEnterForm .pictureSpot input,
+#adminPostEnterForm .downloadLnkSpot input {
+  width: 570px;
+}
+#adminPostEnterForm .summerySpot textarea {
+  width: 570px;
+  height: 80px;
+  resize: none;
+}
+
+#adminPostEnterForm .genreSpot .genreGrid {
+  /* genre checkbox inputs */
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 30px);
+  column-gap: 34px;
+}
+
+#adminPostEnterForm .genreSpot .genreGrid div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#adminPostEnterForm .genreSpot .genre .checkboxText {
+  font-size: 1.7rem;
+  width: 65px;
+  /* all genre texts */
+}
+
+#adminPostEnterForm .isOnGoingSpot #isOnGoingCheckbox {
+  width: 18px;
+  height: 18px;
+}
+
+#adminPostEnterForm .titleSpot {
+  font-size: 3.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(0, 102, 153, 0.4);
+  border-radius: 0.5rem;
+  color: #006699;
+  background-image: linear-gradient(to top, rgb(0, 102, 153, 0.1), white);
+  margin-bottom: 1rem;
+
+  align-self: center;
+}
+#adminPostEnterForm .titleSpot span {
+  padding: 1.2rem;
+}
+
+#adminPostEnterForm .submitButtonSpot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#adminPostEnterForm .submitButtonSpot input {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 91.5%;
+  height: 55px;
+  border-radius: 1rem;
+  /* margin: 2rem 1rem 1rem 1rem; */
+  background-color: #006699;
+  color: white;
+  box-shadow: 0 0px 8px rgba(33, 28, 35, 0.4);
+  filter: brightness(97%);
+  cursor: pointer;
+}
+
+#adminPostEnterForm .submitButtonSpot input:hover {
+  filter: brightness(107%);
+}

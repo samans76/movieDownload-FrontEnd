@@ -1,0 +1,323 @@
+:root {
+  font-size: 10px;
+}
+
+.post {
+  height: 550px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgb(33, 28, 35, 0.08);
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 65%;
+}
+.summery {
+  height: 17%;
+}
+.episodeDetail {
+  height: 9%;
+}
+.download {
+  height: 9%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.postPicture {
+  width: 25%;
+}
+.details {
+  width: 75%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.title,
+.score,
+.genre,
+.country,
+.year,
+.language,
+.duration {
+  height: calc(100% / 7);
+}
+
+.postPicture {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.postPicture .picture {
+  height: 85%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.postPicture .picture img {
+  margin-top: 5px;
+  width: 91%;
+  border-radius: 1rem;
+  filter: brightness(92%);
+  transition: all 0.2s ease-in-out;
+}
+.postPicture .picture img:hover {
+  filter: brightness(102%);
+}
+
+.postPicture .onGoingShow {
+  font-size: 1.73rem;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.onGoingBox {
+  overflow: hidden;
+}
+
+.postPicture .onGoingShow .onGoingBox {
+  width: 92%;
+  height: 75%;
+  border-radius: 0.3rem;
+  background-color: #ec484a;
+  color: white;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+.postPicture .onGoingShow .onGoingBox img {
+  width: 2.8rem;
+  margin: 1rem;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.title .titleName {
+  margin: 0.7em;
+}
+.title .titleName span {
+}
+.title .bookmarkBox {
+  background-color: rgb(0, 0, 0, 0.16);
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  padding: 0.15em 0.1em 0em 0.1em;
+  margin: 0.5em 0.5em 0.5em 0.8em;
+  transition: all 0.2s ease-in-out;
+}
+.title .bookmarkBox img {
+  width: 1em;
+}
+.title .bookmarkBox:hover {
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.score,
+.genre,
+.country,
+.year,
+.language,
+.duration {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.genre .genreTitle,
+.country .countryTitle,
+.year .yearTitle,
+.language .languageTitle,
+.duration .durationTitle {
+  margin: 0em 0.9em 0em 0.2em;
+  font-weight: bold;
+  background-image: linear-gradient(to left, lightgray, white);
+  padding: 0.5em 0.55em 0.5em 1.4em;
+  border-right: 3px solid rgb(0, 0, 0, 0.3);
+}
+
+.score .scoreImage {
+  margin: 0em 0.9em 0em 0.2em;
+}
+.score .scoreNumber {
+  margin: 0em 0.9em 0em 0.4em;
+  color: green;
+}
+
+.genre .genreContent,
+.year .dashText,
+.duration .durationText {
+  margin: 0.3em;
+}
+
+#posts .genre {
+  overflow: hidden;
+}
+
+.summery {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  direction: rtl;
+  overflow: hidden;
+}
+
+.summery .summeryText {
+  width: 95%;
+  border: 1px dashed rgb(0, 0, 0, 0.35);
+  border-radius: 0.35em;
+  padding: 1.2em 1em 1.2em 1em;
+  margin: 0.5em;
+}
+
+.episodeDetail {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.episodeDetail .episodeDetailBox {
+  width: 98%;
+  height: 70%;
+  color: #663399;
+  border-radius: 0.5em;
+  border: 1px solid #663399;
+  font-weight: 600;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.episodeDetail .episodeDetailBox .bellImage {
+  width: 1.7em;
+  margin: 0em 0.8em 0em 0.3em;
+}
+.episodeDetail .episodeDetailBox span {
+  margin: 0.13em;
+}
+
+.download {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+.download .downloadButton {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0.2em 0.18em 0.18em 0.8em;
+  margin: 0.55em 0.55em 0.7em 0.55em;
+  border-radius: 2em;
+  border: 2px solid #3889d0;
+  color: #3889d0;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.download .downloadButton .downloadPic {
+  width: 1.9em;
+  transition: all 0.2s ease-in-out;
+}
+.download .downloadButton:hover {
+  color: white;
+  background-color: #3889d0;
+}
+
+.download .downloadButton:hover .downloadPic {
+  filter: brightness(0) invert(1);
+}
+
+.postPicture .picture img,
+.title .titleName,
+.download .downloadButton,
+.title .bookmarkBox {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .post {
+    height: 800px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgb(33, 28, 35, 0.08);
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .main {
+    height: 78%;
+  }
+  .summery {
+    height: 10%;
+  }
+  .episodeDetail {
+    height: 6%;
+  }
+  .download {
+    height: 6%;
+  }
+
+  .postPicture {
+    height: 55%;
+    /* width: 100%; */
+  }
+  .details {
+    height: 45%;
+    width: 100%;
+    /* width: 100%; */
+  }
+
+  /* .postPicture .picture {
+    height: 85%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .postPicture .picture img {
+    margin-top: 5px;
+    width: 91%;
+    border-radius: 1rem;
+    filter: brightness(92%);
+    transition: all 0.2s ease-in-out;
+  } */
+  .postPicture {
+    width: 210px;
+  }
+}

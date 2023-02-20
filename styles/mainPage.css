@@ -1,0 +1,208 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: lightgray;
+}
+
+#headerSpot {
+  height: 75px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgb(33, 28, 35, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+#footer {
+  height: 85px;
+  background-color: #141727;
+  box-shadow: 0 2px 6px rgba(33, 28, 35, 0.08);
+}
+
+#contents {
+  background-color: lightgray;
+  margin-bottom: 25px;
+}
+
+#adminPostEnterForm {
+  width: 1000px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+#rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+
+#leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+#contents {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  /* display: none; */
+}
+
+#weekChart {
+  background-color: white;
+  height: 400px;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  /* display: none; */
+}
+
+#posts {
+  background-color: lightgray;
+  margin: 1.5rem 1.5rem 0.1rem 1.5rem;
+  border-radius: 1rem;
+  /* display: none; */
+}
+
+#pagesList {
+  background-color: white;
+  height: 55px;
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+#pagesList #buttonsSpot {
+  width: 99%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#pagesList #buttonsSpot .pageButton {
+  width: 33px;
+  height: 33px;
+  margin: 5px;
+  border: 1px solid rgb(0, 0, 0, 0.35);
+  border-radius: 4px;
+
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#pagesList #buttonsSpot .pageButton:hover {
+  color: #3889d0;
+  border-color: #3889d0;
+}
+
+#lastUpdates {
+  background-color: white;
+  height: 2000px;
+  margin: 1.5rem;
+  border-radius: 1rem;
+}
+
+#genreList {
+  background-color: white;
+  height: 1000px;
+  margin: 1.5rem;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1150px) {
+  #rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+  }
+
+  #leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  #rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+  }
+  #leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  #rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    max-width: 600px;
+  }
+  #leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  #rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    max-width: 600px;
+  }
+
+  #leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    max-width: 600px;
+  }
+}

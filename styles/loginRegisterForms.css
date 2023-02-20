@@ -1,0 +1,256 @@
+:root {
+  font-size: 10px;
+}
+#loginContainer {
+  position: relative;
+}
+
+#loginFormBox {
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 380px;
+  height: 220px;
+  background-color: white;
+  border-radius: 1rem;
+  border: 2px solid rgb(0, 0, 0, 0.65);
+  box-shadow: 0 0px 600px 25000px rgba(33, 28, 35, 0.5);
+  position: absolute;
+  left: -150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#loginFormBox .loginFormHeader {
+  font-size: 1.9rem;
+  width: 90%;
+  height: 20%;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.45);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+#loginFormBox .loginFormHeader .loginHeaderButton {
+  position: relative;
+  bottom: -1px;
+  background-color: rgb(0, 102, 153, 0.04);
+  background-image: linear-gradient(to top, rgb(0, 102, 153, 0.06), white);
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  padding: 0.4rem 0.65rem 0.4rem 0.65rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+  color: #006699;
+  border-bottom: 2px solid #006699;
+  cursor: default;
+}
+#loginFormBox .loginFormHeader .registerHeaderButton {
+  position: relative;
+  bottom: -1px;
+  padding: 0.4rem 0.65rem 0.4rem 0.65rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+  cursor: pointer;
+}
+#loginFormBox .loginFormHeader .registerHeaderButton:hover {
+  filter: invert(8%) sepia(50%) saturate(1568%) hue-rotate(164deg)
+    brightness(93%) contrast(102%);
+}
+
+#loginFormBox .usernameSpot,
+#loginFormBox .passwordSpot {
+  width: 90%;
+  height: 27%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#loginFormBox .usernameSpot .usernameInput,
+#loginFormBox .passwordSpot .passwordInput {
+  font-size: 1.6rem;
+  width: 76%;
+  height: 52%;
+  padding-right: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(33, 28, 35, 0.1);
+  background-color: rgba(33, 28, 35, 0.08);
+}
+
+#loginFormBox .loginButton {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 90%;
+  height: 20%;
+  border-radius: 1rem;
+  margin: 2rem 1rem 1rem 1rem;
+  background-color: #006699;
+  color: white;
+  box-shadow: 0 0px 8px rgba(33, 28, 35, 0.4);
+  filter: brightness(97%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#loginFormBox .loginButton:hover {
+  filter: brightness(107%);
+}
+
+#registerFormBox {
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 380px;
+  height: 340px;
+  background-color: white;
+  border-radius: 1rem;
+  border: 2px solid rgb(0, 0, 0, 0.65);
+  box-shadow: 0 0px 600px 25000px rgba(33, 28, 35, 0.5);
+  position: absolute;
+  left: -150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#registerFormBox .registerFormHeader {
+  font-size: 1.9rem;
+  width: 90%;
+  height: 13%;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.45);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+#registerFormBox .registerFormHeader .loginHeaderButton {
+  position: relative;
+  bottom: -1px;
+  background-color: rgb(0, 102, 153, 0.04);
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  padding: 0.4rem 0.65rem 0.4rem 0.65rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+  cursor: pointer;
+}
+#registerFormBox .registerFormHeader .registerHeaderButton {
+  position: relative;
+  bottom: -1px;
+  padding: 0.4rem 0.65rem 0.4rem 0.65rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+  background-image: linear-gradient(to top, rgb(0, 102, 153, 0.06), white);
+  color: #006699;
+  border-bottom: 2px solid #006699;
+  cursor: default;
+}
+#registerFormBox .registerFormHeader .loginHeaderButton:hover {
+  filter: invert(8%) sepia(50%) saturate(1568%) hue-rotate(164deg)
+    brightness(93%) contrast(102%);
+}
+
+#registerFormBox .usernameSpot,
+#registerFormBox .emailSpot,
+#registerFormBox .passwordSpot,
+#registerFormBox .confirmPasswordSpot {
+  width: 90%;
+  height: 17%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#registerFormBox .confirmPasswordSpot .passwordConfirmText {
+  width: 60px;
+}
+
+#registerFormBox .usernameSpot .usernameInput,
+#registerFormBox .emailSpot .emailInput,
+#registerFormBox .passwordSpot .passwordInput,
+#registerFormBox .confirmPasswordSpot .passwordConfirmInput {
+  font-size: 1.6rem;
+  width: 76%;
+  height: 52%;
+  padding-right: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(33, 28, 35, 0.1);
+  background-color: rgba(33, 28, 35, 0.08);
+}
+
+#registerFormBox .registerButton {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 90%;
+  height: 15%;
+  border-radius: 1rem;
+  margin: 2rem 1rem 1rem 1rem;
+  background-color: #006699;
+  color: white;
+  box-shadow: 0 0px 8px rgba(33, 28, 35, 0.4);
+  filter: brightness(97%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#registerFormBox .registerButton:hover {
+  filter: brightness(107%);
+}
+
+#loginContainer #profileFormBox {
+  position: absolute;
+  left: -45px;
+  font-size: 1.4rem;
+  width: 120px;
+  border-radius: 0.4rem;
+  border: 1px solid darkgray;
+  box-shadow: 0 2px 6px rgb(33, 28, 35, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#loginContainer #profileFormBox .adminPageButton {
+  width: 100%;
+  height: 30px;
+  background-color: lightblue;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+#loginContainer #profileFormBox .logOutButton {
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid darkgray;
+  background-color: lightblue;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginContainer #profileFormBox .adminPageButton:hover,
+#loginContainer #profileFormBox .logOutButton:hover {
+  background-color: #3889d0;
+}

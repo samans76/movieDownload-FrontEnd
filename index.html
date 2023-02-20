@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saman Movies</title>
+    <link rel="stylesheet" href="/styles/mainPage.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/posts.css" />
+    <link rel="stylesheet" href="/styles/loginRegisterForms.css" />
+    <link rel="stylesheet" href="/styles/adminPostForm.css" />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="headerSpot">
+        <div id="header">
+          <img
+            id="headerMore"
+            src="./resources/images/icons/headerMore.png"
+            alt="more"
+          />
+          <img
+            id="headerLogo"
+            src="./resources/images/icons/logo.png"
+            alt="site logo"
+          />
+          <div id="middleSpace"></div>
+          <div id="mainPageBtn">صفحه اصلی</div>
+          <div id="serialsBtn">سریال</div>
+          <div id="moviesBtn">فیلم</div>
+          <div id="marketingBtn">درخواست تبلیغات</div>
+          <input id="darkModeBtn" type="checkbox" />
+
+          <div id="headerSearch">
+            <input class="searchBar" type="text" />
+            <img
+              class="searchBarIcon"
+              src="./resources/images/icons/search.svg"
+              alt="searchIcon"
+            />
+          </div>
+          <div id="loginContainer">
+            <div id="loginBox">
+              <img
+                id="loginIcon"
+                src="/resources/images/icons/profile.png"
+                alt="profile image"
+              />
+              <div id="loginBtn">ورود/ثبت نام</div>
+            </div>
+
+            <div id="profileSpot">
+              <div id="profilePhoto">
+                <img
+                  class="profile"
+                  src="/resources/images/icons/profilePhoto.png"
+                  alt="profile image"
+                />
+              </div>
+
+              <div id="profileFormBox">
+                <div class="adminPageButton">صفحه ادمین</div>
+                <div class="logOutButton">خروج</div>
+              </div>
+            </div>
+
+            <div id="loginFormBox">
+              <div class="loginFormHeader">
+                <div class="loginHeaderButton">ورود</div>
+                <div class="registerHeaderButton">ثبت نام</div>
+              </div>
+              <div class="usernameSpot">
+                <span class="usernameText"> نام کاربری</span>
+                <input type="text" class="usernameInput" />
+              </div>
+              <div class="passwordSpot">
+                <span class="passwordText">رمز عبور</span>
+                <input type="password" class="passwordInput" />
+              </div>
+              <div class="loginButton"><span>ورود</span></div>
+            </div>
+
+            <div id="registerFormBox">
+              <div class="registerFormHeader">
+                <div class="loginHeaderButton">ورود</div>
+                <div class="registerHeaderButton">ثبت نام</div>
+              </div>
+              <div class="usernameSpot">
+                <span class="usernameText"> نام کاربری</span>
+                <input type="text" class="usernameInput" />
+              </div>
+              <div class="emailSpot">
+                <span class="emailText"> ایمیل</span>
+                <input type="email" class="emailInput" />
+              </div>
+              <div class="passwordSpot">
+                <span class="passwordText">رمز عبور</span>
+                <input type="password" class="passwordInput" />
+              </div>
+              <div class="confirmPasswordSpot">
+                <span class="passwordConfirmText">تایید رمز عبور</span>
+                <input type="password" class="passwordConfirmInput" />
+              </div>
+              <div class="registerButton">ثبت نام</div>
+            </div>
+          </div>
+        </div>
+        <div id="headerExtra">
+          <div id="headerSearchExtra">
+            <input class="searchBar" type="text" />
+            <img
+              class="searchBarIcon"
+              src="./resources/images/icons/search.svg"
+              alt="searchIcon"
+            />
+          </div>
+          <div id="headerMoreWindow">
+            <div id="mainPageBtnExtra">صفحه اصلی</div>
+            <div id="serialsBtnExtra">سریال</div>
+            <div id="moviesBtnExtra">فیلم</div>
+            <div id="marketingBtnExtra">درخواست تبلیغات</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contents">
+        <div id="rightContainer">
+          <div id="weekChart"></div>
+          <div id="posts">
+            <div class="post" id="spyXFamily">
+              <div class="main">
+                <div class="postPicture">
+                  <div class="picture">
+                    <img
+                      src="/resources/images/serialsPosters/spy x family.jpg"
+                      alt="picture not loaded"
+                    />
+                  </div>
+                  <div class="onGoingShow">
+                    <div class="onGoingBox">
+                      <img src="/resources/images/icons/tv.png" alt="tv" />
+                      <span>در حال پخش</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="title">
+                    <div class="titleName"><span>Spy X Family</span></div>
+                    <div class="bookmarkBox">
+                      <img
+                        src="/resources/images/icons/bookmark.png"
+                        alt="bookmark"
+                      />
+                    </div>
+                  </div>
+                  <div class="score">
+                    <img
+                      class="scoreImage"
+                      src="/resources/images/icons/myAnimeList.png"
+                      alt="animeList"
+                    />
+                    <span class="scoreNumber"> 8.2 </span>
+                    <span class="scoreText"> از 10 </span>
+                  </div>
+                  <div class="genre">
+                    <div class="genreTitle">ژانر</div>
+                    <div class="genreContent">اکشن</div>
+                    <span class="andText"> , </span>
+                    <div class="genreContent">کمدی</div>
+                    <span class="andText"> , </span>
+                    <div class="genreContent">شونن</div>
+                  </div>
+                  <div class="country">
+                    <div class="countryTitle">محصول</div>
+                    <div class="countryText">ژاپن</div>
+                  </div>
+                  <div class="year">
+                    <div class="yearTitle">سال پخش</div>
+                    <span class="startYear"> 2022</span>
+                    <span class="dashText"> - </span>
+                    <span class="endYear"> 2023</span>
+                  </div>
+                  <div class="language">
+                    <div class="languageTitle">زبان</div>
+                    <div class="languageText">ژاپنی</div>
+                  </div>
+                  <div class="duration">
+                    <div class="durationTitle">مدت زمان</div>
+                    <div class="durationNumber">24</div>
+                    <span class="durationText"> دقیقه</span>
+                  </div>
+                </div>
+              </div>
+              <div class="summery">
+                <div class="summeryText">
+                  یک جاسوس در ماموریتی مخفی ازدواج می کند و یک کودک را به عنوان
+                  بخشی از پوشش خود به فرزندی قبول می کند. همسر و دختر او رازهایی
+                  برای خود دارند و هر سه باید برای حفظ آن در کنار هم تلاش
+                  کنند...
+                </div>
+              </div>
+              <div class="episodeDetail">
+                <div class="episodeDetailBox">
+                  <img
+                    src="/resources/images/icons/notification.png"
+                    alt="bell"
+                    class="bellImage"
+                  />
+                  <span class="seasonText">فصل</span>
+                  <span class="seasonNumber">۱</span>
+                  <span class="episodeText">قسمت</span>
+                  <span class="episodeNumber">۱۲</span>
+                </div>
+              </div>
+              <div class="download">
+                <div class="downloadButton">
+                  <img
+                    src="/resources/images/icons/download.png"
+                    alt="download"
+                    class="downloadPic"
+                  />
+                  <span class="downloadText"> دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="pagesList">
+            <div id="buttonsSpot">
+              <div class="pageButton">بعدی</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="leftContainer">
+          <div id="lastUpdates"></div>
+          <div id="genreList"></div>
+        </div>
+
+        <div id="adminPostEnterForm">
+          <div class="titleSpot"><span> فرم آپلود پست جدید</span></div>
+
+          <div class="nameSpot">
+            <span class="nameText"> نام پست</span>
+            <input type="text" class="nameInput" />
+          </div>
+
+          <div class="scoreSpot">
+            <span class="scoreText"> امتیاز</span>
+            <input type="text" class="scoreInput" />
+          </div>
+
+          <div class="genreSpot">
+            <span class="genreText"> ژانر</span>
+            <div class="genreGrid">
+              <div class="genre">
+                <span class="checkboxText"> اکشن</span>
+                <input type="checkbox" name="اکشن" id="action" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> درام </span>
+                <input type="checkbox" name="درام" id="drama" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> ماجراجویی </span>
+                <input type="checkbox" name="ماجراجویی" id="adventure" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> خوناشام</span>
+                <input type="checkbox" name="خوناشام" id="vampire" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> تاریخی </span>
+                <input type="checkbox" name="تاریخی" id="history" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> رومانتیک </span>
+                <input type="checkbox" name="رومانتیک" id="romance" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> فانتزی </span>
+                <input type="checkbox" name="فانتزی" id="fantasy" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> شونن</span>
+                <input type="checkbox" name="شونن" id="shonen" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> مدرسه ای</span>
+                <input type="checkbox" name="مدرسه ای" id="school" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> جادویی</span>
+                <input type="checkbox" name="جادویی" id="magic" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> ورزشی</span>
+                <input type="checkbox" name="ورزشی" id="sport" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> کمدی</span>
+                <input type="checkbox" name="کمدی" id="comedy" />
+              </div>
+
+              <div class="genre">
+                <span class="checkboxText"> موسیقی</span>
+                <input type="checkbox" name="موسیقی" id="music" />
+              </div>
+            </div>
+          </div>
+
+          <div class="countrySpot">
+            <span class="countryText"> کشور</span>
+            <input type="text" class="countryInput" />
+          </div>
+
+          <div class="yearSpot">
+            <span class="startYearText"> سال شروع پخش</span>
+            <input type="text" class="startYearInput" />
+            <span class="endYearText"> سال پایان پخش</span>
+            <input type="text" class="endYearInput" />
+          </div>
+
+          <div class="isOnGoingSpot">
+            <span class="isOnGoingText"> در حال پخش است؟</span>
+            <input type="checkbox" name="isOnGoing?" id="isOnGoingCheckbox" />
+          </div>
+
+          <div class="languageSpot">
+            <span class="languageText"> زبان</span>
+            <input type="text" class="languageInput" />
+          </div>
+
+          <div class="durationSpot">
+            <span class="durationText"> مدت زمان</span>
+            <input type="text" class="durationInput" />
+          </div>
+
+          <div class="summerySpot">
+            <span class="summeryText"> خلاصه</span>
+            <textarea
+              name="summery"
+              id="summeryInput"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="episodeDetailSpot">
+            <span class="seasonText"> شماره فصل</span>
+            <input type="text" class="seasonInput" />
+            <span class="episodeText"> شماره قسمت</span>
+            <input type="text" class="episodeInput" />
+          </div>
+
+          <div class="pictureSpot">
+            <span class="pictureText">لینک تصویر پست</span>
+            <input type="text" class="pictureInput" />
+          </div>
+
+          <div class="downloadLnkSpot">
+            <span class="downloadLnkText">لینک دانلود</span>
+            <input type="text" class="downloadLnkInput" />
+          </div>
+
+          <div class="submitButtonSpot">
+            <input type="submit" value="قرار دادن پست" />
+          </div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+
+    <script type="module" src="scripts/pageHandling.js"></script>
+  </body>
+</html>
