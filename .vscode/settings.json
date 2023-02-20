@@ -1,4 +1,10 @@
 {
   "cSpell.words": ["Saman"],
-  "liveServer.settings.port": 14141
+  "liveServer.settings.port": 14141,
+  "conventionalCommits.scopes": [
+    "Html",
+    "visuality",
+    "functionality",
+    "Both"
+  ]
 }
